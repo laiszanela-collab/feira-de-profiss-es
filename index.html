@@ -11,17 +11,18 @@
 </head>
 <body>
 
-    <!-- Cabeçalho e Navegação (HTML5 Semântico) -->
+    <!-- Cabeçalho e Navegação -->
     <header class="header">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <i class="fa-solid fa-magnifying-glass"></i> Perícia<span>Lab</span>
+                <i class="fa-solid fa-microscope"></i> Perícia<span>Lab</span>
             </a>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Início</a></li>
+                    <li><a href="#atribuicoes">Atribuições</a></li>
                     <li><a href="#historia">História</a></li>
-                    <li><a href="#mercado">Mercado</a></li>
+                    <li><a href="#mercado">Mercado & Dados</a></li>
                 </ul>
             </nav>
             <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">
@@ -35,20 +36,49 @@
         <section id="home" class="hero-section">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <span class="badge">Feira de Profissões</span>
+                    <span class="badge"><i class="fa-solid fa-fingerprint"></i> Feira de Profissões</span>
                     <h1>Perícia Criminal</h1>
-                    <p class="slogan">"A ciência a serviço da justiça e da verdade."</p>
+                    <p class="slogan">"A ciência a serviço da justiça e da verdade material."</p>
                     <p class="description">
-                        A Perícia Criminal é a aplicação de conhecimentos científicos para o esclarecimento de crimes e auxílio à justiça. 
-                        O perito criminal analisa evidências físicas, genéticas, digitais e químicas em locais de infração, elaborando laudos técnicos fundamentais para o processo judicial.
+                        A Perícia Criminal é o ramo da criminalística focado no estudo técnico-científico de vestígios e evidências. 
+                        O perito criminal atua na investigação de locais de crime, análise de evidências biológicas, testes químicos e 
+                        avaliações computacionais, elaborando laudos periciais indispensáveis para o sistema de justiça criminal.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#mercado" class="btn btn-primary">Ver Mercado & Salários</a>
-                        <a href="#historia" class="btn btn-secondary">Conhecer a História</a>
+                        <a href="#atribuicoes" class="btn btn-primary">Ver Rotina & Atribuições</a>
+                        <a href="#mercado" class="btn btn-secondary">Estatísticas do Mercado</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80" alt="Equipamentos laboratoriais de análise pericial e científica" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80" alt="Análise de amostras em laboratório de perícia criminal" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Detalhamento de Rotina e Atribuições -->
+        <section id="atribuicoes" class="section">
+            <div class="container">
+                <h2 class="section-title">Rotina & Atribuições da Carreira</h2>
+                <p class="section-subtitle">O trabalho diário do Perito Criminal no campo e no laboratório</p>
+
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-vial-virus"></i></div>
+                        <h3>Isolamento & Preservação</h3>
+                        <p>Atuação direta no local de infração para isolar, fotografar, mapear e coletar vestígios sem contaminação cruzada.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-dna"></i></div>
+                        <h3>Exames Laboratoriais</h3>
+                        <p>Análises avançadas de DNA forense, toxicológicas, balísticas e extração de dados em dispositivos eletrônicos.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
+                        <h3>Elaboração de Laudos</h3>
+                        <p>Redação do Laudo Pericial Oficial com rigores científicos e metodológicos, fundamentando decisões judiciais.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -65,7 +95,7 @@
                         <div class="timeline-content">
                             <span class="year">Século III a.C.</span>
                             <h3>Primeiros Registros de Medicina Legal</h3>
-                            <p>Na China Antiga, o livro "Xi Yuan Lu" descreve os primeiros métodos de diferenciação entre mortes por afogamento e estrangulamento.</p>
+                            <p>Na China Antiga, o tratado "Xi Yuan Lu" documenta métodos científicos para diferenciar acidentes de homicídios e afogamento por análise respiratória.</p>
                         </div>
                     </article>
 
@@ -74,7 +104,7 @@
                         <div class="timeline-content">
                             <span class="year">1892</span>
                             <h3>Surgimento da Dactiloscopia</h3>
-                            <p>Juan Vucetich faz a primeira identificação criminal bem-sucedida usando impressões digitais na Argentina, revolucionando a identificação humana.</p>
+                            <p>Juan Vucetich implementa a classificação de impressões digitais na Argentina, realizando a primeira solução de crime por papiloscopia do mundo.</p>
                         </div>
                     </article>
 
@@ -83,7 +113,7 @@
                         <div class="timeline-content">
                             <span class="year">1910</span>
                             <h3>Primeiro Laboratório de Criminalística</h3>
-                            <p>Edmond Locard funda o primeiro laboratório de criminalística em Lyon, França, formulando o "Princípio da Troca de Locard".</p>
+                            <p>Edmond Locard funda o primeiro laboratório científico de polícia em Lyon, estabelecendo o "Princípio da Troca: todo contato deixa uma marca".</p>
                         </div>
                     </article>
 
@@ -91,8 +121,8 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="year">1984 - Presente</span>
-                            <h3>Era do DNA e Perícia Computacional</h3>
-                            <p>Alec Jeffreys desenvolve o perfil de DNA. Hoje, a tecnologia avançou para análises genéticas de alta precisão e perícia em crimes cibernéticos.</p>
+                            <h3>Era da Genética e Perícia Digital</h3>
+                            <p>Sir Alec Jeffreys descobre a técnica de DNA Fingerprint. Na era contemporânea, ganha destaque o combate a crimes cibernéticos e análise preditiva.</p>
                         </div>
                     </article>
                 </div>
@@ -106,42 +136,42 @@
                 <p class="section-subtitle">Integração com Matemática, Sociologia e Geografia</p>
 
                 <div class="cards-grid">
-                    <article class="card">
-                        <div class="card-icon"><i class="fa-solid fa-dna"></i></div>
-                        <h3>Genética Forense</h3>
-                        <p>Análise de amostras biológicas para identificação humana e verificação de vínculo genético com alta precisão estatística.</p>
-                        <span class="salary">Média Inicial: R$ 10.000 a R$ 20.000+</span>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon"><i class="fa-solid fa-laptop-medical"></i></div>
+                    <article class="card highlight-card">
+                        <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
                         <h3>Perícia Computacional</h3>
-                        <p>Investigação de crimes cibernéticos, extração de dados em dispositivos eletrônicos e análise de segurança de redes.</p>
+                        <p>Investigação de ataques digitais, análise de redes, fraudes financeiras e recuperação de mídias criptografadas.</p>
                         <span class="salary">Média Inicial: R$ 11.000 a R$ 22.000+</span>
                     </article>
 
-                    <article class="card">
+                    <article class="card highlight-card">
+                        <div class="card-icon"><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+                        <h3>Genética Forense & DNA</h3>
+                        <p>Análise quantitativa de STRs genéticos para identificação de autoria e busca em bancos de perfis genéticos nacionais.</p>
+                        <span class="salary">Média Inicial: R$ 10.000 a R$ 20.000+</span>
+                    </article>
+
+                    <article class="card highlight-card">
                         <div class="card-icon"><i class="fa-solid fa-flask"></i></div>
-                        <h3>Química & Toxicologia Forense</h3>
-                        <p>Identificação de substâncias químicas, análise de venenos, drogas e resíduos de disparos em exames laboratoriais.</p>
+                        <h3>Toxicologia & Balística</h3>
+                        <p>Exames químicos para substâncias ilícitas, venenos, identificação de calibre e confrontos microbalísticos.</p>
                         <span class="salary">Média Inicial: R$ 10.000 a R$ 19.000+</span>
                     </article>
                 </div>
 
-                <!-- Gráfico de Empregabilidade / Projeção -->
+                <!-- Gráfico de Empregabilidade e Demanda -->
                 <div class="chart-box">
-                    <h3>Demanda por Especializações em Perícia Criminal</h3>
+                    <h3>Demanda por Especializações Periciais (Projeção)</h3>
                     <div class="bar-chart">
                         <div class="bar-item">
-                            <span class="bar-label">Computação & Crimes Digitais</span>
+                            <span class="bar-label">Computação & Crimes Cibernéticos</span>
                             <div class="bar-wrapper"><div class="bar" style="--width: 95%;">95%</div></div>
                         </div>
                         <div class="bar-item">
-                            <span class="bar-label">Genética Forense (DNA)</span>
+                            <span class="bar-label">Genética Forense (Banco de DNA)</span>
                             <div class="bar-wrapper"><div class="bar" style="--width: 88%;">88%</div></div>
                         </div>
                         <div class="bar-item">
-                            <span class="bar-label">Toxicologia & Química</span>
+                            <span class="bar-label">Toxicologia & Análises Químicas</span>
                             <div class="bar-wrapper"><div class="bar" style="--width: 82%;">82%</div></div>
                         </div>
                         <div class="bar-item">

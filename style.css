@@ -1,26 +1,26 @@
-/* --- Variáveis de Tema (Dark/Light) --- */
+/* --- Variáveis de Tema Vermelho Forense --- */
 :root {
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
+    --bg-primary: #0d090a;
+    --bg-secondary: #1a1012;
     --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent-color: #38bdf8;
-    --accent-hover: #0284c7;
-    --card-bg: #1e293b;
-    --border-color: #334155;
-    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    --text-secondary: #a1a1aa;
+    --accent-color: #ef4444;
+    --accent-hover: #dc2626;
+    --card-bg: #181113;
+    --border-color: #3f1719;
+    --shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.15);
 }
 
 [data-theme="light"] {
-    --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --accent-color: #0284c7;
-    --accent-hover: #0369a1;
+    --bg-primary: #fef2f2;
+    --bg-secondary: #fee2e2;
+    --text-primary: #18181b;
+    --text-secondary: #52525b;
+    --accent-color: #dc2626;
+    --accent-hover: #b91c1c;
     --card-bg: #ffffff;
-    --border-color: #e2e8f0;
-    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+    --border-color: #fca5a5;
+    --shadow: 0 10px 25px -5px rgba(220, 38, 38, 0.1);
 }
 
 /* --- Reset e Configurações Globais --- */
@@ -52,7 +52,7 @@ body {
 .header {
     position: sticky;
     top: 0;
-    background-color: rgba(15, 23, 42, 0.9);
+    background-color: rgba(13, 9, 10, 0.92);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
@@ -60,7 +60,7 @@ body {
 }
 
 [data-theme="light"] .header {
-    background-color: rgba(248, 250, 252, 0.9);
+    background-color: rgba(254, 242, 242, 0.92);
 }
 
 .nav-container {
@@ -134,7 +134,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* --- Hero Section (Home) --- */
+/* --- Hero Section --- */
 .hero-section {
     padding: 100px 0 80px;
 }
@@ -147,12 +147,13 @@ body {
 }
 
 .badge {
-    background-color: rgba(56, 189, 248, 0.1);
+    background-color: rgba(239, 68, 68, 0.15);
     color: var(--accent-color);
-    padding: 5px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
+    border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
 .hero-text h1 {
@@ -193,7 +194,7 @@ body {
 
 .btn-primary {
     background-color: var(--accent-color);
-    color: #0f172a;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
@@ -209,6 +210,7 @@ body {
     width: 100%;
     border-radius: 12px;
     box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
 }
 
 /* --- Linha do Tempo --- */
@@ -271,6 +273,11 @@ body {
     border-radius: 12px;
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
 }
 
 .card-icon {
@@ -322,11 +329,12 @@ body {
     background-color: var(--bg-secondary);
     border-radius: 6px;
     overflow: hidden;
+    border: 1px solid var(--border-color);
 }
 
 .bar {
     background-color: var(--accent-color);
-    color: #0f172a;
+    color: #ffffff;
     padding: 5px 10px;
     font-weight: 600;
     font-size: 0.8rem;
@@ -374,7 +382,7 @@ body {
     font-size: 0.8rem;
 }
 
-/* --- Responsividade (Dispositivos Móveis) --- */
+/* --- Responsividade --- */
 @media (max-width: 768px) {
     .hero-content {
         grid-template-columns: 1fr;
